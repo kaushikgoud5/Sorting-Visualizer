@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="3.png">
+    <title>Sorting Visualizer</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Sorting Visualizer</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="bubble.html">
+                Bubble Sort</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="selection.html">Selection Sort</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="insertion.html">Insertion Sort</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link active" href="merge.html">Merge Sort</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="quick.html">Quick Sort</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="count.html">Count Sort</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active " href="heap.html">Heap Sort</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="px-4 pt-5 my-5 text-center border-bottom ">
+      <div class="main">
+      <h1 class="display-4 fw-bold ">
+        Sorting Visualizer
+      </h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+          Sorting Visualizer will be displaying the working mechanism of various
+          sorting algorithms like, Bubble Sort, Selection Sort, Insertion Sort, Quick Sort, Merge Sort, Heap Sort and Count Sort. The main objective of developing
+          this Visualizer is to make a learner comfortable in learning these
+          techniques quickly and easily. Discrete event simulation, Operating
+          Systems, real time systems and many other as well. In the general case
+          the efficiency of an application depends on the efficiency of sorting
+          algorithm used.
+        </p>
+      </div>
+
+    </div>
+    </div>
+<div class="container-canvas">
+    <button
+      class="btn btn-primary btn-lg"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasTop"
+      aria-controls="offcanvasTop"
+    >
+      Bubble Sort
+    </button>
+    <div
+      class="offcanvas offcanvas-top"
+      tabindex="-1"
+      id="offcanvasTop"
+      aria-labelledby="offcanvasTopLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasTopLabel">Bubble Sort</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high.<br>
+        <b>Time Complexity: O(N^2)<br>
+        Auxiliary Space: O(1)</b> 
+      </div>
+    </div>
+
+    <button
+      class="btn btn-danger btn-lg"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight"
+    >
+      Selection Sort
+    </button>
+
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">
+          Selection Sort
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">Selection sort is a simple and efficient sorting algorithm that works by repeatedly selecting the smallest (or largest) element from the unsorted portion of the list and moving it to the sorted portion of the list. The algorithm repeatedly selects the smallest (or largest) element from the unsorted portion of the list and swaps it with the first element of the unsorted portion. This process is repeated for the remaining unsorted portion of the list until the entire list is sorted. One variation of selection sort is called “Bidirectional selection sort” which goes through the list of elements by alternating between the smallest and largest element, this way the algorithm can be faster in some cases.<br>
+        <b>Time Complexity: O(N^2) <br>
+          Auxiliary Space: O(1) </b>
+      </div>
+      
+    </div>
+
+    <button
+      class="btn btn-success btn-lg"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasBottom"
+      aria-controls="offcanvasBottom"
+    >
+      Merge Sort
+    </button>
+
+    <div
+      class="offcanvas offcanvas-bottom"
+      tabindex="-1"
+      id="offcanvasBottom"
+      aria-labelledby="offcanvasBottomLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasBottomLabel">
+          Merge Sort
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body small">Merge sort is a sorting algorithm that works by dividing an array into smaller subarrays, sorting each subarray, and then merging the sorted subarrays back together to form the final sorted array.
+        In simple terms, we can say that the process of merge sort is to divide the array into two halves, sort each half, and then merge the sorted halves back together. This process is repeated until the entire array is sorted.
+        Merge sort is a popular choice for sorting large datasets because it is relatively efficient and easy to implement. It is often used in conjunction with other algorithms, such as quicksort, to improve the overall performance of a sorting routine.
+      <br>
+      <b>
+      Time complexity : θ(Nlog(N))<br>
+      Auxiliary Space: O(n)
+      </b>
+      </div>
+    </div>
+    <button class="btn btn-warning btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Quick Sort</button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Quick Sort</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>QuickSort is a Divide and Conquer algorithm. It picks an element as a pivot and partitions the given array around the picked pivot. There are many different versions of quickSort that pick pivot in different ways.
+      <ul>
+        <li>Always pick the first element as a pivot.</li>
+        <li>Always pick the last element as a pivot</li>
+        <li>Pick a random element as a pivot.</li>
+        <li>Pick median as the pivot.</li>
+      </ul>
+      The key process in quickSort is a partition(). The target of partitions is, given an array and an element x of an array as the pivot, put x at its correct position in a sorted array and put all smaller elements (smaller than x) before x, and put all greater elements (greater than x) after x. All this should be done in linear time.
+      <b>
+        Time complexity : θ(Nlog(N))</b><br>
+       <b>Auxiliary Space: O(1)</b> 
+    </p>
+  </div>
+</div>
+<button class="btn btn-info btn-lg my-3 insertbtn" type="button" onclick="insertionButton()">Insertion Sort</button>
+
+<button class="btn btn btn-lg  my-3" type="button" onclick="HeapButton()" style="background-color:darkkhaki">Heap Sort</button>
+<button class="btn btn-dark btn-lg my-3" onclick="CountButton()">Count Sort</button>
+
+
+
+<div class="popup-overlay">
+</div>
+<div class="popup">
+  <h3 style="text-align: center;">Insertion Sort</h3>
+  <p>
+    Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your hands. The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.<br>
+    <b>Insertion Sort Algorithm </b>
+    <ul>
+      <li>Iterate from arr[1] to arr[N] over the array.</li>
+      <li>Compare the current element (key) to its predecessor. </li>
+      <li>If the key element is smaller than its predecessor, compare it to the elements before. Move the greater elements one position up to make space for the swapped element.</li>
+    </ul>
+    <br>
+    <b>Time Complexity: O(N^2) <br>
+      Auxiliary Space: O(1) </b>
+  </p>
+  <div class="popclose-btn">
+    &times;
+  </div>
+</div>
+
+<div class="popup1">
+  <h3 style="text-align: center;">Heap Sort</h3>
+  <p>
+    Heap sort is a comparison-based sorting technique based on Binary Heap data structure. It is similar to the selection sort where we first find the minimum element and place the minimum element at the beginning. Repeat the same process for the remaining elements.
+  <ul>
+    <li>Heap sort is an in-place algorithm.</li>
+    <li>Its typical implementation is not stable, but can be made stable</li>
+    <li>Typically 2-3 times slower than well-implemented QuickSort.  The reason for slowness is a lack of locality of reference.</li>
+  </ul>
+  <b>
+    Time complexity : O(Nlog(N))</b><br>
+   <b>Auxiliary Space: O(1)</b> <br><br>
+   <a href="https://www.geeksforgeeks.org/heap-sort/" style="text-decoration: none; color:black" target="_blank" >Know more about Heap sort</a>
+
+</p>
+  <div class="popclose1-btn">
+    &times;
+  </div>
+</div>
+<div class="popup2">
+  <h3 style="text-align: center;">Count Sort</h3>
+  <p>
+    Counting sort is a sorting technique based on keys between a specific range. It works by counting the number of objects having distinct key values (a kind of hashing). Then do some arithmetic operations to calculate the position of each object in the output sequence.
+    <ul>
+      <li>Counting sort makes assumptions about the data, for example, it assumes that values are going to be in the range of 0 to 10 or 10 – 99, etc, Some other assumption counting sort makes is input data will be all real numbers.</li>
+      <li>Like other algorithms this sorting algorithm is not a comparison-based algorithm, it hashes the value in a temporary count array and uses them for sorting.</li>
+      <li>It uses a temporary array making it a non-In Place algorithm.</li>
+    </ul>
+    <b>
+      Time Complexity: O(N + K)<br>
+      Auxiliary Space: O(N + K)
+    </b><br><br>
+    <a href="https://www.geeksforgeeks.org/counting-sort/" target="_blank" style="text-decoration: none; color:black">Know more about Count sort</a>
+  </p>
+  <div class="popclose2-btn">
+    &times;
+  </div>
+</div>
+
+
+
+
+<script>
+  function insertionButton(){
+      var closeBtn=document.querySelector(".popclose-btn");
+      document.body.classList.add("popup-active");
+      closeBtn.addEventListener("click",()=>{
+        document.body.classList.remove("popup-active");
+      })
+     
+  }
+  function HeapButton(){
+    var closeBtn1=document.querySelector(".popclose1-btn");
+    document.body.classList.add("popup1-active");
+    closeBtn1.addEventListener("click",()=>{
+      document.body.classList.remove("popup1-active");
+    })
+   
+  }
+  function CountButton(){
+    var closeBtn2=document.querySelector(".popclose2-btn");
+    document.body.classList.add("popup2-active");
+    closeBtn2.addEventListener("click",()=>{
+      document.body.classList.remove("popup2-active");
+    })
+   
+  }
+
+</script>
+
+
+
+
+</div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
