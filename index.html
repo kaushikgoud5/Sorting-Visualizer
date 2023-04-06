@@ -39,26 +39,23 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="bubble.html">
+              <a class="nav-link active bubble " href="bubble.html">
                 Bubble Sort</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="selection.html">Selection Sort</a>
+              <a class="nav-link active selection"  href="selection.html">Selection Sort</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="insertion.html">Insertion Sort</a>
+              <a class="nav-link active insertion" href="insertion.html">Insertion Sort</a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link active" href="merge.html">Merge Sort</a>
+              <a class="nav-link active merge" href="merge.html">Merge Sort</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="quick.html">Quick Sort</a>
+              <a class="nav-link active quick" href="quick.html">Quick Sort</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="count.html">Count Sort</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active " href="heap.html">Heap Sort</a>
+              <a class="nav-link active heap " href="heap.html">Heap Sort</a>
             </li>
           </ul>
         </div>
@@ -207,10 +204,10 @@
     </p>
   </div>
 </div>
-<button class="btn btn-info btn-lg my-3 insertbtn" type="button" onclick="insertionButton()">Insertion Sort</button>
+
+<button class="btn btn-info btn-lg my-3 insertbtn" type="button" onclick="insertionButton()" >Insertion Sort</button>
 
 <button class="btn btn btn-lg  my-3" type="button" onclick="HeapButton()" style="background-color:darkkhaki">Heap Sort</button>
-<button class="btn btn-dark btn-lg my-3" onclick="CountButton()">Count Sort</button>
 
 
 
@@ -249,30 +246,12 @@
    <b>Auxiliary Space: O(1)</b> <br><br>
    <a href="https://www.geeksforgeeks.org/heap-sort/" style="text-decoration: none; color:black" target="_blank" >Know more about Heap sort</a>
 
-</p>
+  </p>
   <div class="popclose1-btn">
     &times;
   </div>
 </div>
-<div class="popup2">
-  <h3 style="text-align: center;">Count Sort</h3>
-  <p>
-    Counting sort is a sorting technique based on keys between a specific range. It works by counting the number of objects having distinct key values (a kind of hashing). Then do some arithmetic operations to calculate the position of each object in the output sequence.
-    <ul>
-      <li>Counting sort makes assumptions about the data, for example, it assumes that values are going to be in the range of 0 to 10 or 10 – 99, etc, Some other assumption counting sort makes is input data will be all real numbers.</li>
-      <li>Like other algorithms this sorting algorithm is not a comparison-based algorithm, it hashes the value in a temporary count array and uses them for sorting.</li>
-      <li>It uses a temporary array making it a non-In Place algorithm.</li>
-    </ul>
-    <b>
-      Time Complexity: O(N + K)<br>
-      Auxiliary Space: O(N + K)
-    </b><br><br>
-    <a href="https://www.geeksforgeeks.org/counting-sort/" target="_blank" style="text-decoration: none; color:black">Know more about Count sort</a>
-  </p>
-  <div class="popclose2-btn">
-    &times;
-  </div>
-</div>
+
 
 
 
@@ -294,14 +273,7 @@
     })
    
   }
-  function CountButton(){
-    var closeBtn2=document.querySelector(".popclose2-btn");
-    document.body.classList.add("popup2-active");
-    closeBtn2.addEventListener("click",()=>{
-      document.body.classList.remove("popup2-active");
-    })
-   
-  }
+
 
 </script>
 
